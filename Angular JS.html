@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="test">
+
+<div ng-controller="c1">
+<h3>{{msg}}</h3>
+</div>
+
+<script>
+var a = angular.module("test", []);
+a.controller("c1", function($scope){
+$scope.msg = "Hello Mosif Ali! Welcome to AngularJS";
+});
+</script>
+
+</body>
+</html>
